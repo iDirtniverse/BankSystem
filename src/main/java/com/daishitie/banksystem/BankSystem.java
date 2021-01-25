@@ -54,7 +54,7 @@ public class BankSystem extends JavaPlugin {
     private static SetCommand setCommand;
     private static DepositCommand depositCommand;
     private static WithdrawCommand withdrawCommand;
-    private static InterestHandler interestHandler;
+    public static InterestHandler interestHandler;
     private static InterestCommand interestCommand;
     private DatabaseManagerInterface databaseManager;
     private UserdataDatabaseInterface<Double> moneyDatabaseInterface;
