@@ -62,7 +62,7 @@ public class PlaceholderHandler extends PlaceholderExpansion {
             if (identifier.equalsIgnoreCase("total"))
                 return money.format(totalBalance);
             if (identifier.equalsIgnoreCase("nextInterestTime"))
-                return BankSystem.interestHandler().getNextInterestTime();
+                return BankSystem.interestHandler.getNextInterestTime();
             return null;
         } catch (Exception e) {
             BankSystem.logger.log(Level.WARNING, "Something went wrong with the placeholder.");
